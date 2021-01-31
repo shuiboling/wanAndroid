@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.wanandroid.widget.PullableLayout
+        android:id="@+id/pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/image_second_floor"-->
+<!--            android:scaleType="fitXY"/>-->
+<!--        <ListView-->
+<!--            android:id="@+id/pull_list"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:visibility="gone"/>-->
+<!---->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pull_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.example.wanandroid.widget.PullableLayout>
+
+
+</LinearLayout>

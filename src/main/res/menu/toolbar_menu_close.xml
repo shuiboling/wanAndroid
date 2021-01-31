@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_beijing"
+        android:title="beijing"
+        android:icon="@drawable/beijing_icon"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_niaochao"
+        android:title="niaochao"
+        android:icon="@drawable/niaochao_icon"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_tiananmen"
+        android:title="tiananmen"
+        android:icon="@drawable/tiananmen_icon"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_tiantan"
+        android:title="tiantan"
+        android:icon="@drawable/tiantan_icon"
+        app:showAsAction="always" />
+</menu>

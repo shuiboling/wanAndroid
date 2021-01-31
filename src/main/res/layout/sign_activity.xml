@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请签名"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.example.wanandroid.widget.SignatureView
+            android:id="@+id/sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_sign_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="谢磊"
+            android:textSize="100sp"
+            android:textColor="#e6e6e6"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="164dp"
+            android:layout_height="44dp"
+            android:text="重置"
+            android:textColor="#ffffff"
+            android:background="#dddddd"
+            android:textSize="18sp"
+            android:layout_marginLeft="27dp"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="164dp"
+            android:layout_height="44dp"
+            android:textColor="#ffffff"
+            android:text="确认"
+            android:background="#ffa900"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_item_shape2">
+
+        <EditText
+            android:id="@+id/et_rich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:background="@null"
+            android:textSize="@dimen/sp_14"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/bt_cu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加粗"/>
+
+        <Button
+            android:id="@+id/bt_xie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="斜体"/>
+
+        <Button
+            android:id="@+id/bt_xia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下划线"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

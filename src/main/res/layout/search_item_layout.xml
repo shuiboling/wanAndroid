@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_search_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="15dp">
+
+    <TextView
+        android:id="@+id/tv_title_search_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_tag_search_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tag"
+            android:textSize="12sp"
+            android:textColor="@color/color_4CAF50"
+            android:background="@drawable/search_item_shape"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_author_search_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="author"
+            android:layout_toRightOf="@id/tv_tag_search_item"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_03A9F4"
+            android:background="@drawable/search_item_shape2"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="2dp"/>
+
+        <ImageView
+            android:id="@+id/iv_heart_search_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_red_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

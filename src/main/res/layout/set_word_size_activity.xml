@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setting words size"
+        android:layout_margin="20dp"
+        android:layout_below="@id/btn"
+        android:background="@color/color_8AC47592"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+
+        <com.example.wanandroid.widget.WordSettingBar
+            android:id="@+id/wb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_e1faf7"
+            android:layout_centerInParent="true"
+            app:cellNumber="4"
+
+            android:paddingHorizontal="30dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
