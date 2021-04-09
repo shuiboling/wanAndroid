@@ -59,6 +59,24 @@ public class LoginRequest extends BaseRequest {
                     }
                 });
     }
+
+    public void cloud(final OnNetworkListener listener) {
+        Observable<CommonResponse<String>> observable = webRequest.cloud("75JdAF7dsKZnY8hK");
+        observable.compose(RxHelper.rxScheduleHelper())
+                .subscribe(new SubscribeHelper(rxPresenter) {
+
+                    @Override
+                    public void onNext(Object value) {
+                        listener.onSuccess(value);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        super.onError(e);
+                        listener.onFail();
+                    }
+                });
+    }
 }
 
 

@@ -28,6 +28,21 @@ public class LoginPresenter extends RxPresenter<LoginContract.View> implements L
         });
     }
 
+    @Override
+    public void cloud() {
+        loginRequest.cloud(new OnNetworkListener() {
+            @Override
+            public void onSuccess(Object data) {
+                Log.d("zyy",data+"");
+            }
+
+            @Override
+            public void onFail() {
+
+            }
+        });
+    }
+
     public void register(){
         loginRequest.register("", "", new OnNetworkListener() {
             @Override

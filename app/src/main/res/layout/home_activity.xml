@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             app:menu="@menu/bottom_bar_menu"
-            app:labelVisibilityMode="labeled" />
+            app:labelVisibilityMode="labeled"
+            app:itemBackground="@color/white"/>
 
     </LinearLayout>
 
